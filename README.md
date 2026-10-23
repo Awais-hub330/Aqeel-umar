@@ -45,20 +45,20 @@ The `ads static` folder contains additional ad creative images, including travel
 
 ## Contact details and CV
 
-The real email address is configured near the top of `script.js`:
+The contact details shown on the page are configured near the top of `script.js`:
 
 ```js
 const PROFILE = {
-  email: "aqeelumar980@gmail.com",
-  phone: "",
+  email: "aqr59277@gmail.com",
+  phone: "03242395085",
   whatsapp: "",
   behance: "",
-  linkedin: "",
+  linkedin: "https://www.linkedin.com/in/aqeel-umar-7ba55a418/?isSelfProfile=true",
   instagram: ""
 };
 ```
 
-Update optional entries only with confirmed details. Phone and WhatsApp are intentionally empty because the supplied phone number was incomplete. Social links are not shown or invented. A CV PDF was not present in the project, so no download button is included; add a CV file before adding a link to it.
+The contact section links directly to email, phone and LinkedIn; it does not use a contact form. Update these values only when the details change. A CV PDF was not present in the project, so no download button is included; add a CV file before adding a link to it.
 
 ## Publish with GitHub Pages
 

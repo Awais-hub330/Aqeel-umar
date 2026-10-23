@@ -1,9 +1,9 @@
 const PROFILE = {
-  email: "aqeelumar980@gmail.com",
-  phone: "",
+  email: "aqr59277@gmail.com",
+  phone: "03242395085",
   whatsapp: "",
   behance: "",
-  linkedin: "",
+  linkedin: "https://www.linkedin.com/in/aqeel-umar-7ba55a418/?isSelfProfile=true",
   instagram: ""
 };
 
@@ -353,13 +353,29 @@ function stepArtwork(direction) {
 
 function renderContact() {
   const emailLink = document.querySelector("#email-link");
-  if (!emailLink) return;
   if (PROFILE.email) {
     emailLink.href = `mailto:${PROFILE.email}`;
-    emailLink.textContent = `${PROFILE.email} ↗`;
+    document.querySelector("#email-value").textContent = PROFILE.email;
     emailLink.setAttribute("aria-label", `Email Aqeel Umar at ${PROFILE.email}`);
   } else {
     emailLink.hidden = true;
+  }
+
+  const phoneLink = document.querySelector("#phone-link");
+  if (PROFILE.phone) {
+    const phoneDigits = PROFILE.phone.replace(/\D/g, "");
+    phoneLink.href = `tel:+92${phoneDigits.replace(/^0/, "")}`;
+    document.querySelector("#phone-value").textContent = PROFILE.phone;
+    phoneLink.setAttribute("aria-label", `Call Aqeel Umar at ${PROFILE.phone}`);
+  } else {
+    phoneLink.hidden = true;
+  }
+
+  const linkedinLink = document.querySelector("#linkedin-link");
+  if (PROFILE.linkedin) {
+    linkedinLink.href = PROFILE.linkedin;
+  } else {
+    linkedinLink.hidden = true;
   }
 }
 

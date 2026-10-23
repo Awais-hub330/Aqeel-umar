@@ -353,6 +353,7 @@ function stepArtwork(direction) {
 
 function renderContact() {
   const emailLink = document.querySelector("#email-link");
+  if (!emailLink) return;
   if (PROFILE.email) {
     emailLink.href = `mailto:${PROFILE.email}`;
     emailLink.textContent = `${PROFILE.email} ↗`;
@@ -491,4 +492,18 @@ window.addEventListener("resize", () => {
 }, { passive: true });
 document.querySelector("#copyright-year").textContent = new Date().getFullYear();
 renderCategories();
+
+const navLinks = document.querySelectorAll('.nav-link');
+navLinks.forEach((link) => {
+  link.addEventListener('click', () => {
+    navLinks.forEach((item) => item.classList.toggle('is-active', item === link));
+  });
+});
+
+const firstCategoryName = categories[0].name;
+const firstCategoryButton = categoryGrid.querySelector(`[data-category="${firstCategoryName}"]`);
+if (firstCategoryButton) {
+  selectCategory(firstCategoryName, firstCategoryButton);
+}
+
 renderContact();

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#0c0f14">
+  <meta name="theme-color" content="#121212">
   <title>Aqeel Umar | Graphic Designer Portfolio</title>
   <meta name="description" content="Aqeel Umar is a graphic designer based in Lahore, Pakistan, creating social media carousels, ad creatives, banners, flyers and logos.">
   <meta property="og:type" content="website">
@@ -12,7 +12,7 @@
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Aqeel Umar | Graphic Designer">
   <meta name="twitter:description" content="Thoughtful design. Strong visual impact. Explore graphic design work by Aqeel Umar.">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230c0f14'/%3E%3Ctext x='32' y='43' text-anchor='middle' font-family='Arial,sans-serif' font-size='34' font-weight='700' fill='%2365d6c4'%3EA%3C/text%3E%3C/svg%3E">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23121212'/%3E%3Ctext x='32' y='43' text-anchor='middle' font-family='Arial,sans-serif' font-size='34' font-weight='700' fill='%23fd6f00'%3EA%3C/text%3E%3C/svg%3E">
   <link rel="stylesheet" href="./styles.css">
   <script src="./projects.js" defer></script>
   <script src="./script.js" defer></script>
@@ -22,50 +22,145 @@
 
   <header class="site-header" id="top">
     <div class="header-inner page-shell">
-      <a class="wordmark" href="#top" aria-label="Aqeel Umar, back to top">Aqeel Umar<span>.</span></a>
+      <a class="wordmark" href="#home" aria-label="Aqeel Umar home">AQEEL UMAR</a>
+
+      <nav class="primary-navigation" aria-label="Main navigation">
+        <ul class="nav-links" id="primary-navigation">
+          <li><a class="nav-link is-active" href="#home">Home</a></li>
+          <li><a class="nav-link" href="#services">Services</a></li>
+          <li><a class="nav-link" href="#about">About Me</a></li>
+          <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <a class="button button-primary header-cta" href="#contact">Hire Me</a>
+
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Open navigation">
         <span class="menu-toggle-label">Menu</span>
         <span class="menu-icon" aria-hidden="true"><i></i><i></i></span>
       </button>
-      <nav class="primary-navigation" aria-label="Main navigation">
-        <ul class="nav-links" id="primary-navigation">
-          <li><a href="#work">Work</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#contact">Contact <span aria-hidden="true">↗</span></a></li>
-        </ul>
-      </nav>
     </div>
   </header>
 
   <main id="main-content">
-    <section class="hero page-shell" aria-labelledby="hero-title">
+    <section class="hero page-shell" id="home" aria-labelledby="hero-title">
       <div class="hero-copy">
-        <p class="eyebrow">Graphic Designer · Lahore, Pakistan</p>
-        <h1 id="hero-title">Aqeel Umar<span class="hero-period">.</span></h1>
-        <p class="hero-headline">Brand identities. <span>Digital creatives.</span></p>
-        <p class="hero-intro">I create social media carousels, ad creatives, banners, flyers and logos that help brands communicate clearly and stand out.</p>
+        <p class="eyebrow"><span class="status-dot"></span>Hi, I am</p>
+        <h1 id="hero-title" class="hero-name">Aqeel Umar</h1>
+        <p class="hero-role">Graphic Designer</p>
+        <p class="hero-intro">I create carousels, ad creatives, banners, flyers and logos that help brands communicate clearly and stand out.</p>
+
         <div class="hero-actions">
-          <a class="button button-accent" href="#work">View My Work <span aria-hidden="true">↘</span></a>
-          <a class="button button-quiet" href="#contact">Get in Touch <span aria-hidden="true">↗</span></a>
+          <a class="button button-primary" href="#contact">Hire Me</a>
+        </div>
+
+        <div class="summary-grid" aria-label="Core design specialities">
+          <article class="summary-card">
+            <h3>Digital Design</h3>
+            <p>Carousels &amp; ad creatives</p>
+          </article>
+          <article class="summary-card">
+            <h3>Brand Identity</h3>
+            <p>Logos &amp; visual identity</p>
+          </article>
+          <article class="summary-card">
+            <h3>Print Design</h3>
+            <p>Banners &amp; flyers</p>
+          </article>
         </div>
       </div>
-      <div class="hero-visual">
+
+      <div class="hero-visual" aria-label="Portrait of Aqeel Umar">
+        <div class="portrait-orb" aria-hidden="true"></div>
         <figure class="hero-portrait">
           <img src="./Aqeel%20umar.png" alt="Portrait of Aqeel Umar" width="1024" height="1024" fetchpriority="high">
         </figure>
       </div>
     </section>
 
-    <section class="work-section section-pad" id="work" aria-labelledby="work-title">
+    <section class="services section-pad" id="services" aria-labelledby="services-title">
       <div class="page-shell">
-        <div class="section-heading work-heading">
+        <div class="section-heading section-heading-center">
           <div>
-            <p class="eyebrow">A selection of my work</p>
-            <h2 id="work-title">Selected work<span class="heading-period">.</span></h2>
+            <p class="section-kicker">Services</p>
+            <h2 id="services-title">Services</h2>
           </div>
-          <p class="section-aside">Explore visual stories, promotional artwork and brand identities.</p>
         </div>
+        <p class="section-subtitle">Creative design services for digital communication and brand identity.</p>
+
+        <div class="service-grid">
+          <article class="service-card">
+            <span class="service-graphic graphic-carousel" aria-hidden="true"></span>
+            <h3>Social Media Carousels</h3>
+            <p>Connected slide designs that present ideas clearly and keep your message consistent.</p>
+          </article>
+
+          <article class="service-card">
+            <span class="service-graphic graphic-ads" aria-hidden="true"></span>
+            <h3>Ad Creatives</h3>
+            <p>Promotional visuals for offers, campaigns and social media advertising.</p>
+          </article>
+
+          <article class="service-card">
+            <span class="service-graphic graphic-banner" aria-hidden="true"></span>
+            <h3>Banner Design</h3>
+            <p>Clear, engaging banners for websites, campaigns and digital promotions.</p>
+          </article>
+
+          <article class="service-card">
+            <span class="service-graphic graphic-flyer" aria-hidden="true"></span>
+            <h3>Flyer Design</h3>
+            <p>Well-organised layouts for announcements, promotions and printed communication.</p>
+          </article>
+
+          <article class="service-card">
+            <span class="service-graphic graphic-logo" aria-hidden="true"></span>
+            <h3>Logo Design</h3>
+            <p>Distinctive visual marks shaped around a brand’s identity.</p>
+          </article>
+
+          <article class="service-card">
+            <span class="service-graphic graphic-branding" aria-hidden="true"></span>
+            <h3>Branding &amp; Layout</h3>
+            <p>Consistent visual elements and layouts across digital and print materials.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about section-pad" id="about" aria-labelledby="about-title">
+      <div class="page-shell">
+        <div class="section-heading section-heading-center">
+          <div>
+            <p class="section-kicker">About Me</p>
+            <h2 id="about-title">About Me</h2>
+          </div>
+        </div>
+
+        <div class="about-layout">
+          <div class="about-portrait-wrap">
+            <div class="about-portrait-orb" aria-hidden="true"></div>
+            <img src="./Aqeel%20umar.png" alt="Aqeel Umar portrait in grayscale" class="about-portrait">
+          </div>
+
+          <div class="about-copy">
+            <p>I'm Aqeel Umar, a graphic designer based in Lahore, Pakistan. My work includes social media carousels, advertising creatives, banners, flyers and logos. I enjoy visual storytelling, brand identity and creating clear layouts for digital and print communication.</p>
+            <p>My experience includes graphic design work at Grow Business Digital and design training at Qalam.IT under SeeBiz.com. I work with Adobe Photoshop and Illustrator, with basic knowledge of Figma, UI/UX and video editing in Canva.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio section-pad" id="portfolio" aria-labelledby="portfolio-title">
+      <div class="page-shell">
+        <div class="section-heading section-heading-center">
+          <div>
+            <p class="section-kicker">Portfolio</p>
+            <h2 id="portfolio-title">Portfolio</h2>
+          </div>
+        </div>
+
         <div class="category-grid" id="category-grid" aria-label="Explore work by category"></div>
 
         <section class="gallery-panel" id="gallery-panel" aria-labelledby="gallery-title" hidden>
@@ -93,89 +188,42 @@
       </div>
     </section>
 
-    <section class="about-section section-pad" id="about" aria-labelledby="about-title">
-      <div class="page-shell about-layout">
-        <div class="about-copy">
-          <p class="eyebrow">A little about me</p>
-          <h2 id="about-title">Design with intention.<br><span>Made to communicate.</span></h2>
-          <p>I’m Aqeel Umar, a graphic designer based in Lahore, Pakistan. My work includes social media carousels, advertising creatives, banners, flyers and logos. I enjoy visual storytelling, brand identity and creating clear layouts for digital and print communication.</p>
-          <div class="about-interests">
-            <p><span>Interests</span> Digital illustration · Creative design exploration</p>
-            <p><span>Languages</span> Urdu · English</p>
-          </div>
-        </div>
-        <div class="skills-panel">
-          <p class="eyebrow">Skills &amp; tools</p>
-          <ul class="skills-list">
-            <li>Adobe Photoshop</li>
-            <li>Adobe Illustrator</li>
-            <li>Social media design</li>
-            <li>Branding</li>
-            <li>Layout design</li>
-            <li>Figma <span>Basic</span></li>
-            <li>UI/UX <span>Basic</span></li>
-            <li>Video editing in Canva <span>Basic</span></li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="experience-section section-pad" id="experience" aria-labelledby="experience-title">
-      <div class="page-shell">
-        <div class="section-heading">
-          <div>
-            <p class="eyebrow">Selected roles</p>
-            <h2 id="experience-title">Experience<span class="heading-period">.</span></h2>
-          </div>
-        </div>
-        <div class="timeline">
-          <article class="timeline-entry">
-            <p class="timeline-date">Experience</p>
-            <div class="timeline-role">
-              <h3>Graphic Designer</h3>
-              <p class="timeline-company">Grow Business Digital</p>
-              <p>Created social media carousels and advertising creatives, and produced banners, flyers and logos for digital marketing and brand communication.</p>
-            </div>
-            <span class="timeline-number" aria-hidden="true">01</span>
-          </article>
-          <article class="timeline-entry">
-            <p class="timeline-date">August 2025 — February 2026</p>
-            <div class="timeline-role">
-              <h3>Design Trainee</h3>
-              <p class="timeline-company">Qalam.IT <span>under SeeBiz.com</span></p>
-              <p>Designed social media posts, branding elements and layouts. Worked with Photoshop, Illustrator and Figma, and practised basic video editing in Canva.</p>
-            </div>
-            <span class="timeline-number" aria-hidden="true">02</span>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="education-section section-pad" id="education" aria-labelledby="education-title">
-      <div class="page-shell education-layout">
-        <div>
-          <p class="eyebrow">Learning &amp; training</p>
-          <h2 id="education-title">Education<span class="heading-period">.</span></h2>
-        </div>
-        <ul class="education-list">
-          <li><span>2024</span><div><h3>BBIT</h3><p>Virtual University · Completion status not specified</p></div></li>
-          <li><span>2024</span><div><h3>Graphic Design course</h3><p>Three months · Corvit System</p></div></li>
-          <li><span>2023</span><div><h3>I.Com</h3><p>Govt. Municipal Degree College</p></div></li>
-          <li><span>2021</span><div><h3>Matriculation in Bio Science</h3><p>Laboratory School</p></div></li>
-          <li><span>Training</span><div><h3>Graphic Design Trainee Program</h3><p>Completed</p></div></li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="contact-section section-pad" id="contact" aria-labelledby="contact-title">
+    <section class="contact section-pad" id="contact" aria-labelledby="contact-title">
       <div class="page-shell contact-layout">
-        <div>
-          <p class="eyebrow">Have a project in mind?</p>
-          <h2 id="contact-title">Let’s make something<br><span>meaningful.</span></h2>
+        <div class="contact-copy">
+          <p class="section-kicker">Contact Me</p>
+          <h2 id="contact-title">Let’s create something meaningful.</h2>
         </div>
-        <div class="contact-details">
-          <p>For project enquiries, reach out by email.</p>
-          <a class="email-link" id="email-link" href="#contact">aqeelumar980@gmail.com <span aria-hidden="true">↗</span></a>
+
+        <div class="contact-panel">
+          <form class="contact-form">
+            <div class="field-row">
+              <label>
+                <span>Name</span>
+                <input type="text" name="name" placeholder="Your name" aria-label="Your name">
+              </label>
+              <label>
+                <span>Email</span>
+                <input type="email" name="email" placeholder="Your email" aria-label="Your email">
+              </label>
+            </div>
+
+            <div class="field-row single-field">
+              <label>
+                <span>Phone</span>
+                <input type="tel" name="phone" placeholder="Phone Number" aria-label="Phone Number">
+              </label>
+            </div>
+
+            <div class="field-row single-field">
+              <label>
+                <span>Message</span>
+                <textarea name="message" rows="4" placeholder="Tell me about your project" aria-label="Tell me about your project"></textarea>
+              </label>
+            </div>
+
+            <button type="submit" class="button button-primary">Send</button>
+          </form>
         </div>
       </div>
     </section>
@@ -183,7 +231,10 @@
 
   <footer class="site-footer">
     <div class="page-shell footer-inner">
-      <a class="footer-name" href="#top">Aqeel Umar<span>.</span><small>Graphic Designer · Lahore, Pakistan</small></a>
+      <div class="footer-brand">
+        <span class="wordmark footer-wordmark">AQEEL UMAR</span>
+        <small>Graphic Designer · Lahore, Pakistan</small>
+      </div>
       <p>© <span id="copyright-year"></span> Aqeel Umar. All rights reserved.</p>
       <a class="back-to-top" href="#top">Back to top <span aria-hidden="true">↑</span></a>
     </div>
